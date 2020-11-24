@@ -67,7 +67,7 @@ def my_sum ():
 
 
 my_sum()
-#задание 6
+#задание 6/
 
 def int_func (*args):
     word = input("Введите слова: ")
