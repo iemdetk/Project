@@ -1,0 +1,76 @@
+#Задание 1
+def div(*args):
+
+    try:
+        arg1 = int(input("Введите делимое: "))
+        arg2 = int(input("Введите делитель: "))
+        res = arg1 / arg2
+    except ValueError:
+        return 'Ошибка'
+    except ZeroDivisionError:
+        return "Ошибка"
+
+    return res
+
+
+    if arg2 != 0:
+        return arg1 / arg2
+    else:
+        print("Ошибка")
+
+
+
+print(f'частное  {div()}')
+
+
+
+
+#Задание 2
+def my_func(arg_1 , arg_2, arg_3):
+    if arg_1 >= arg_3 and arg_2 >= arg_3:
+        return arg_1 + arg_2
+    elif arg_1 > arg_2 and arg_1 < arg_3:
+        return arg_1 + arg_3
+    else:
+        return arg_2 + arg_3
+
+print(f'Result - {my_func(int(input("enter first argument: ")), int(input("enter second argument: ")), int(input("enter third argument: ")))}')
+#задание 3
+def inf (name, surname, year, city, email, telephone):
+     print(f"name - {name}; surname - {surname}; year - {year}; city - {city}; email - {email}; telephone - {telephone}")
+inf (name = input("введите имя:"), surname = input("Введите фамилию:"), year = int(input("Введите год рождения:")), city = input("Введите город:"), email = input("Введите email:"), telephone = int(input("Введите номер телефона:"))  )
+
+#задание 4
+def my_func(x, y):
+     return x**y
+x = int(input("Введите число:"))
+y = int(input("Введите отрицательное число:"))
+print(my_func(x, y))
+
+#задание 5
+def my_sum ():
+    sum_res = 0
+    out = False
+    while out == False:
+        number = input('Введите числа или Q для выхода: ').split()
+
+        result = 0
+        for el in range(len(number)):
+            if number[el] == 'Q':
+                out = True
+                break
+            else:
+                result = result + int(number[el])
+        sum_res = sum_res + result
+        print(f'Сумма  {sum_res}')
+    print(f'Конечный результат {sum_res}')
+
+
+my_sum()
+#задание 6
+
+def int_func (*args):
+    word = input("Введите слова: ")
+    print(word.title())
+    return
+int_func()
